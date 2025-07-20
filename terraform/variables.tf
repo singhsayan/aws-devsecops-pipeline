@@ -1,13 +1,17 @@
 variable "region" {
-  default = "us-east-1"
+  type        = string
+  default     = "us-east-1"
+  description = "AWS region"
 }
 
 variable "bucket_name" {
-  description = "my_s3_bucket"
+  type        = string
+  default     = "my_s3_bucket"
+  description = "Name of the S3 bucket"
 }
 
 variable "table_name" {
-  description = "devsecops_table"
+  type        = string
+  default     = "devsecops_table"
+  description = "Name of the DynamoDB table"
 }
-
-
