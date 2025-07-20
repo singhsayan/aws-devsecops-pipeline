@@ -39,13 +39,11 @@ resource "aws_s3_bucket_lifecycle_configuration" "lifecycle" {
       days = 30
     }
 
-    abort_incomplete_multipart_upload {
-      days_after_initiation = 7
-    }
+    abort_incomplete_multipart_upload_days = 7
   }
 }
 
-resource "aws_s3_bucket_logging" "s3_logging" {
+resource "aws_s3_bucket_logging" "access_logging" {
   bucket = aws_s3_bucket.secure_bucket.id
 
   target_bucket = aws_s3_bucket.secure_bucket.id
@@ -57,7 +55,7 @@ resource "aws_s3_bucket_server_side_encryption_configuration" "encryption" {
 
   rule {
     apply_server_side_encryption_by_default {
-      sse_algorithm = "AES256"
+      sse_algorithm = "AES256"  # Using free-tier managed key
     }
   }
 }
