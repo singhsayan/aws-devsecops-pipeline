@@ -97,4 +97,5 @@ resource "aws_dynamodb_table" "secure_table" {
     Name        = "SecureTable"
     Environment = "DevSecOps"
   }
-}
+}  
+ 
