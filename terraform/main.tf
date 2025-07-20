@@ -42,7 +42,7 @@ resource "aws_s3_bucket_lifecycle_configuration" "lifecycle" {
     id     = "expire-objects"
     status = "Enabled"
     
-    filter = {}    
+    filter {}    
 
     expiration {
       days = 30
