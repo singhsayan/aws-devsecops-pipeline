@@ -122,10 +122,6 @@ To avoid incurring cloud charges:
 2. **Delete DynamoDB Table:**
    - Go to AWS DynamoDB > Tables > `devsecops_table` > Delete
 
-## License
-
-MIT License
-
 ## Author
 
 **Sayan Singh**
