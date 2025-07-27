@@ -83,8 +83,6 @@ The following AWS resources are deployed using Terraform:
 ### 4. Terraform Deployment (`deploy`)
 - Applies infrastructure on AWS only after passing previous jobs
 
-## Screenshots to Include in README or Demo
-
 ### S3 Bucket Overview  
 ![S3 Bucket Overview](./screenshots/s3-bucket.png)
 
