@@ -15,3 +15,5 @@ variable "table_name" {
   default     = "devsecops_table"
   description = "Name of the DynamoDB table"
 }
+
+
